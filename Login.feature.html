@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Login.feature</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #b3ae60;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Login.feature</font>
+</center></td></tr></table>
+<pre><span class="s0">Feature</span><span class="s1">: </span><span class="s2">Navigate to My Tek website and add product to cart</span>
+  <span class="s2">As a user, I want to open the My Tek website, search for an article, and add it to my cart.</span>
+
+  <span class="s3">@tag1</span>
+  <span class="s0">Scenario</span><span class="s1">: </span><span class="s2">Search for an article, add it to the cart, and verify</span>
+    <span class="s0">Given </span><span class="s2">user navigates to the My Tek homepage</span>
+    <span class="s0">When </span><span class="s2">user searches for an article</span>
+    <span class="s0">And </span><span class="s2">user clicks on the article</span>
+    <span class="s0">And </span><span class="s2">user clicks on the 'Ajouter au panier' button</span>
+    <span class="s0">And </span><span class="s2">user clicks on the cart icon</span>
+    <span class="s0">And </span><span class="s2">user clicks on the checkout button</span>
+    <span class="s0">Then </span><span class="s2">the user should be directed to the checkout page</span>
+
+
+
+  <span class="s3">@tag2</span>
+  <span class="s0">Scenario</span><span class="s1">: </span><span class="s2">User logs in and fills out the payment form with valid details</span>
+    <span class="s0">Given </span><span class="s2">user is on the checkout page</span>
+    <span class="s0">And </span><span class="s2">user enters their email &quot;arfaouiferiel10@gmail.com&quot; in the email field</span>
+    <span class="s0">And </span><span class="s2">user enters their password &quot;fsegt2023&quot; in the password field</span>
+    <span class="s0">And </span><span class="s2">user clicks on the &quot;Connexion&quot; button</span>
+    <span class="s0">And </span><span class="s2">user chooses the delivery option</span>
+    <span class="s0">And </span><span class="s2">user clicks on the &quot;Suivant&quot; button</span>
+    <span class="s0">And </span><span class="s2">user selects the payment method</span>
+    <span class="s0">Then </span><span class="s2">Close the browser</span>
+
+
+
+</pre>
+</body>
+</html>
